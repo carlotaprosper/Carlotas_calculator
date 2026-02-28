@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlota´s calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Carlota´s calculator</h1>
+        <div id="screen">0</div>
+
+        <div class="buttons-container">
+            <input type="button" class="btn-ac" value="C" onclick="clearOutput()">
+            <input type="button" class="btn-ac" value="^" onclick="show(value)">
+            <input type="button" class="btn-ac" value="%" onclick="show(value)">
+            <input type="button" class="btn-op" value="/" onclick="show(value)">
+
+            <input type="button" value="7" onclick="show(value)">
+            <input type="button" value="8" onclick="show(value)">
+            <input type="button" value="9" onclick="show(value)">
+            <input type="button" class="btn-op" value="*" onclick="show(value)">
+
+            <input type="button" value="4" onclick="show(value)">
+            <input type="button" value="5" onclick="show(value)">
+            <input type="button" value="6" onclick="show(value)">
+            <input type="button" class="btn-op" value="-" onclick="show(value)">
+
+            <input type="button" value="1" onclick="show(value)">
+            <input type="button" value="2" onclick="show(value)">
+            <input type="button" value="3" onclick="show(value)">
+            <input type="button" class="btn-op" value="+" onclick="show(value)">
+            
+            <input type="button" value="." onclick="show(value)">
+            <input type="button" value="0" onclick="show(value)">
+            <button class="btn-delete" onclick="clearOne()">
+                <i class="fa-solid fa-backspace"></i>
+            </button>
+            <input type="button" class="btn-equal" value="=" onclick="calculate()">
+        </div>
+        
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
